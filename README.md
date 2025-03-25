@@ -7,17 +7,25 @@
 
 ## MCP 配置
 
+#### GAODE_KEY
+
+需要一个高德地图的apikey，申请地址：https://lbs.amap.com/api/webservice/guide/api/weather
+
 
 ### uvx
 
 ```json
 {
   "mcpServers": {
-    "duckduckgo": {
+    "gaodeweather": {
+      "name": "gaodeweather",
       "command": "uvx",
       "args": [
         "mcp-gaodeweather-server"
-      ]
+      ],
+      "env": {
+        "GAODE_KEY": "your apikey"
+      }
     }
   }
 }
