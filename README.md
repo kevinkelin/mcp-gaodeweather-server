@@ -12,6 +12,8 @@
 需要一个高德地图的apikey，申请地址：https://lbs.amap.com/api/webservice/guide/api/weather
 
 
+## Usage with Claude Desktop
+
 ### uvx
 
 ```json
