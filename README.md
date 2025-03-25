@@ -8,3 +8,19 @@
 ## MCP 配置
 
 
+### uvx
+
+```json
+{
+  "mcpServers": {
+    "duckduckgo": {
+      "command": "uvx",
+      "args": [
+        "mcp-gaodeweather-server"
+      ]
+    }
+  }
+}
+```
+
+
