@@ -1,0 +1,25 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - gaodeKey
+    properties:
+      gaodeKey:
+        type: string
+        description: The API key to access Gaode weather service.
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'mcp-gaodeweather-server',
+      args: [],
+      env: {
+        GAODE_KEY: config.gaodeKey
+      }
+    })
+  exampleConfig:
+    gaodeKey: your_dummy_gaode_api_key
