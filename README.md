@@ -11,7 +11,6 @@
 
 需要一个高德地图的apikey，申请地址：https://lbs.amap.com/api/webservice/guide/api/weather
 
-
 ## Usage with Claude Desktop
 
 ### uvx
@@ -33,4 +32,10 @@
 }
 ```
 
+### Installing via Smithery
 
+To install mcp-gaodeweather-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@kevinkelin/mcp-gaodeweather-server):
+
+```bash
+npx -y @smithery/cli install @kevinkelin/mcp-gaodeweather-server --client claude
+```
